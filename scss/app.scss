@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap");
+@import"../node_modules/animate.css/animate.min.css";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 6,
+  9: $spacer * 7,
+  10: $spacer * 8,
+);
+
+// $body:5000px;
+
+//bootstrap custom
+$font-family-sans-serif:"Poppins", sans-serif;
+
+
+$font-size-base:0.93rem;
+$font-family-sans-serif:Poppins;
+$body-bg: hsl(19, 100%, 96%);
+$body-color: hsl(19, 16%, 35%);
+$primary: hsl(19, 64%, 54%);
+$light:  hsl(19, 16%, 35%);
+$navbar-nav-link-padding-x:1.5rem;
+$border-radius:1.5rem;
+$btn-padding-y:0.7rem;
+$btn-padding-x:1.8rem;
+$btn-font-size:0.8rem;
+$danger:#2f55a4;
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+$colorfooter: hsl(19, 16%, 35%);
+
+body{
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+}
+//custom css
+.navbar{
+    background:hsla(18, 100%, 96%, 0.765)
+}
+.title{
+    font-family:"Lora", serif ;
+    color: hsl(19, 16%, 15%);
+}
+.sub-title{
+    font-family:"Dancing Script", cursive ;
+}
+
+.title h1{
+    font-size: 45px;
+}
+
+.navbar-brand-logo{
+    height: 1.5rem;
+}
+.btn-primary, .btn-primary:hover{
+    color:white;
+}
+
+.btn-icon i{
+    font-size: 20px;
+    vertical-align: middle;
+}
+.home-title img{
+    height:45px;
+}
+.dish-card{
+    background-color: hsl(19, 100%, 97%);
+    
+}
+.dish-card img{
+    transform: translateY(-50px);
+    transition:0.5s;
+}
+.dish-card:hover img{
+    transform: translateY(-70px);
+}
+
+
+
+input:focus-visible{
+   outline-color:rgb(215, 196, 172);
+   
+}
+
+.custom-btn{
+    border:1px solid $primary;
+    background-color: $primary;
+    font-size: small;
+    
+}
+
+#home::before{
+    content: url(../img/leaf-branch-2.png);
+    position: absolute;
+    opacity: 0.1;
+    transform: rotate(80deg) translateX(-45px) translateY(80px);
+}
+
